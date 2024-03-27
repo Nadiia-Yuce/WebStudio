@@ -36,8 +36,6 @@ button {
 }
 
 .container {
-  /* max-width: 1158px;
-  padding: 0 15px; */
   max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
@@ -195,8 +193,6 @@ button {
 /*TODO ==================FEATURES================== */
 
 .section {
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -217,7 +213,6 @@ button {
 .title,
 .features-subtitle {
   font-weight: 700;
-  /*! для мобілки ^ */
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -237,7 +232,6 @@ button {
 
 .text {
   font-weight: 500;
-  /*! жирність шришту для мобілки ^ */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -249,27 +243,14 @@ button {
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  /*! wrap заданий для мобілки ^, на десктопі його немає */
-  /* gap: 24px; */
   gap: 72px;
 }
 
 .features-item {
-  /* width: calc((100% - 3 * 24px) / 4); */
   width: 100%;
 }
 
 .features-icon-container {
-  /* display: flex;
-  gap: 24px;
-  justify-content: center;
-  align-items: center;
-  background: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  margin-bottom: 8px; */
   display: none;
 }
 
@@ -285,6 +266,10 @@ button {
 
 /*TODO ===================TEAM=================== */
 
+.team .container {
+  /* max-width: 296px; */
+}
+
 .team {
   background-color: #f4f4fd;
 }
@@ -294,7 +279,11 @@ button {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  /*! врап для мобілки ^ */
+  /* gap: 24px; */
+  gap: 72px;
 }
 
 .team-item {
@@ -302,7 +291,12 @@ button {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   border-radius: 0 0 4px 4px;
-  width: calc((100% - 3 * 24px) / 4);
+  /* width: calc((100% - 3 * 24px) / 4); */
+  width: 100%;
+}
+
+.team-image {
+  margin: 0 auto;
 }
 
 .team-wrap {
@@ -797,6 +791,8 @@ textarea::placeholder {
     max-width: 768px;
   }
 
+  /** ===============FEATURES================= */
+
   .features-subtitle {
     text-align: left;
   }
@@ -811,6 +807,8 @@ textarea::placeholder {
   }
 }
 
+/** ===============TEAM================= */
+
 /*? =================DESKTOP================== */
 
 @media screen and (min-width: 1158px) {
@@ -819,6 +817,8 @@ textarea::placeholder {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  /** ===============FEATURES================= */
 
   .section {
     padding-top: 120px;
@@ -856,4 +856,6 @@ textarea::placeholder {
     height: 112px;
     margin-bottom: 8px;
   }
+
+  /** ===============TEAM================= */
 }
