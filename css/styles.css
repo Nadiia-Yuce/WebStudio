@@ -266,10 +266,6 @@ button {
 
 /*TODO ===================TEAM=================== */
 
-.team .container {
-  /* max-width: 296px; */
-}
-
 .team {
   background-color: #f4f4fd;
 }
@@ -279,9 +275,9 @@ button {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  /*! врап для мобілки ^ */
+  /*! direction для мобілки, wrap надалі замість дірекшн ^ */
   /* gap: 24px; */
   gap: 72px;
 }
@@ -292,11 +288,6 @@ button {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   border-radius: 0 0 4px 4px;
   /* width: calc((100% - 3 * 24px) / 4); */
-  width: 100%;
-}
-
-.team-image {
-  margin: 0 auto;
 }
 
 .team-wrap {
@@ -805,9 +796,23 @@ textarea::placeholder {
   .features-item {
     width: calc((100% - 1 * 24px) / 2);
   }
-}
 
-/** ===============TEAM================= */
+  /** ===============TEAM================= */
+
+  .team .container {
+    max-width: 584px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
 
 /*? =================DESKTOP================== */
 
@@ -858,4 +863,16 @@ textarea::placeholder {
   }
 
   /** ===============TEAM================= */
+
+  .team .container {
+    max-width: 1158px;
+  }
+
+  .team-list {
+    gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
 }
