@@ -62,7 +62,6 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
   padding: 17px 0;
 }
 
@@ -76,70 +75,11 @@ button {
 }
 
 .nav-list {
-  /* display: flex; */
   display: none;
-  /* gap: 40px; */
-}
-
-.nav-item {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  display: block;
-  padding: 24px 0;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-item:hover,
-.nav-item:focus {
-  color: #404bbf;
-}
-
-.current {
-  position: relative;
-  color: #404bbf;
-}
-
-.nav-item.current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #404bbf;
 }
 
 .address {
-  /* font-style: normal;
-  margin-left: auto; */
   display: none;
-}
-
-.address-list {
-  display: flex;
-  gap: 40px;
-}
-
-.address-item {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-item:hover,
-.address-item:focus {
-  color: #404bbf;
 }
 
 .open-menu-btn {
@@ -152,7 +92,7 @@ button {
 /*TODO ===================HERO=================== */
 
 .hero {
-  max-width: 1440px;
+  max-width: 320px;
   background-size: cover;
   background-color: #2e2f42;
   background-image: linear-gradient(
@@ -162,18 +102,18 @@ button {
     url(../images/people-office.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  padding: 188px 0;
+  padding: 72px 52px;
   margin: 0 auto;
 }
 
 .hero-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   max-width: 496px;
   margin-left: auto;
   margin-right: auto;
@@ -794,6 +734,95 @@ textarea::placeholder {
     max-width: 768px;
   }
 
+  /** ===============HEADER================= */
+
+  .open-menu-btn {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    display: block;
+    padding: 24px 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-item:hover,
+  .nav-item:focus {
+    color: #404bbf;
+  }
+
+  .current {
+    position: relative;
+    color: #404bbf;
+  }
+
+  .nav-item.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+  }
+
+  .address {
+    display: block;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .address-item {
+    font-size: 12px;
+    line-height: 1.16;
+    /* font-size: 16px; */
+    /* line-height: 1.5; */
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-item:hover,
+  .address-item:focus {
+    color: #404bbf;
+  }
+
+  /** ===============HERO================= */
+
+  .hero {
+    max-width: 768px;
+    padding: 112px 0;
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+
   /** ===============FEATURES================= */
 
   .features-subtitle {
@@ -835,6 +864,31 @@ textarea::placeholder {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  /** ===============HERO================= */
+  .hero {
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  /** ===============HEADER================= */
+  .logo {
+    margin-right: 76px;
+  }
+
+  .address-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .address-item {
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   /** ===============FEATURES================= */
