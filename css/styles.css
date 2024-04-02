@@ -225,7 +225,6 @@ button {
   text-align: center;
   color: #fff;
   margin-bottom: 72px;
-  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -324,7 +323,7 @@ button {
 }
 
 .team .container {
-  padding: 0 28px;
+  max-width: 296px;
 }
 
 .team-list {
@@ -914,6 +913,12 @@ textarea::placeholder {
       url(../images/people-office-tab.jpg);
   }
 
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
   @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -944,7 +949,7 @@ textarea::placeholder {
   /** ===============TEAM================= */
 
   .team .container {
-    padding: 0 108px;
+    max-width: 584px;
   }
 
   .team-list {
@@ -972,7 +977,7 @@ textarea::placeholder {
   /** ===============FOOTER================= */
 
   .footer .container {
-    padding: 0 108px;
+    max-width: 584px;
   }
 
   .footer-wrap {
@@ -1103,9 +1108,8 @@ textarea::placeholder {
 
   /** ===============TEAM================= */
 
-  .team .container,
-  .footer .container {
-    padding: 0 15px;
+  .team .container {
+    max-width: 1158px;
   }
 
   .team-list {
@@ -1141,6 +1145,10 @@ textarea::placeholder {
 
   .footer {
     padding: 100px 0;
+  }
+
+  .footer .container {
+    max-width: 1158px;
   }
 
   .footer-wrap {
